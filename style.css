@@ -18,10 +18,13 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   font-family: "Lato", sans-serif;
   background: #272727;
   color: #ffd868;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -52,4 +55,36 @@ body {
   box-shadow: 0 0 30px#ffd868;
   color: #272727;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .display-date,
+  .display-time {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .display-date,
+  .display-time {
+    font-size: 0.9em;
+  }
 }
